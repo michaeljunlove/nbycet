@@ -2,9 +2,13 @@ const HtmlWebpackPlugin = require("html-webpack-plugin");
 const path = require("path");
 module.exports = (env) => {
   return {
+    output: {
+      filename: 'main.js',
+      path: path.join(__dirname,"docs")
+    },
     plugins: [
       new HtmlWebpackPlugin({
-        title: "Webpack demo",
+        title: "宁波言成电子技术有限公司",
       }),
     ],
     devServer: {
