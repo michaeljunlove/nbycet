@@ -1,9 +1,6 @@
 import React from 'react'
-// import PropTypes from 'prop-types'
-// import cnames from 'classnames'
 import './index.less'
 class Header extends React.PureComponent {
-
   render () {
     return (
         <div className='header'>
@@ -23,10 +20,6 @@ class Header extends React.PureComponent {
         </div>
     )
   }
-}
-
-Header.propTypes = {
-
 }
 
 export default Header
