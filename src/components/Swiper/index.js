@@ -18,8 +18,8 @@ class SwiperContainer extends React.PureComponent {
     return (
       <ReactSwipe className="carousel" swipeOptions={{continuous:false,auto:3000}} key={this.state.datalist.length}>
       {
-          this.state.datalist.map((item)=>
-              <div key={item.id}>
+          this.state.datalist.map((item,index)=>
+              <div key={index}>
                    <img src={item.imageUrl} style={{width:'100%'}} />
                    <div className='carousel-des'>{item.des}</div>
               </div>

@@ -2,6 +2,7 @@ import React from 'react'
 import Header from './components/Header'
 import Swiper from './components/Swiper'
 import Footer from './components/Footer'
+import Main from './components/Main'
 
 class App extends React.PureComponent {
   render () {
@@ -9,6 +10,7 @@ class App extends React.PureComponent {
       <div>
         <Header />
         <Swiper />
+        <Main />
         <Footer />
       </div>
     )

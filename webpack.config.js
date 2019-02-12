@@ -1,5 +1,7 @@
 const HtmlWebpackPlugin = require("html-webpack-plugin");
+const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const path = require("path");
+const devMode = process.env.NODE_ENV !== 'production'
 
 module.exports = (env) => {
   return {
@@ -18,30 +20,46 @@ module.exports = (env) => {
         // 编译顺序从右往左
         {
           test: /\.(less|css)$/,
-          use: [{
-            loader: 'style-loader' // creates style nodes from JS strings
-          }, {
-            loader: 'css-loader' // translates CSS into CommonJS
-          }, {
-            loader: 'less-loader' // compiles Less to CSS
-          }]
+          use: [
+            {
+              loader: MiniCssExtractPlugin.loader
+            },
+            {
+              loader: 'css-loader' // translates CSS into CommonJS
+            }, 
+            {
+              loader: 'less-loader' // compiles Less to CSS
+            }
+          ]
         }
+        
       ]
     },
     plugins: [
+      new MiniCssExtractPlugin({
+        filename: "style.css"
+      }),
       new HtmlWebpackPlugin({
           template:'./src/index.html',
           filename:'index.html',//生成的html页面的名字为one.html
-          title:"宁波言成电子技术有限公司1",//它的title为one，记得要在src/one.html中加入<%= %>
+          title:"宁波言成电子技术有限公司",//它的title为one，记得要在src/one.html中加入<%= %>
           hash:true,
-          chunks:['index']
+          chunks:['index'],
+          minify:{
+            removeComments: false, // 删除注释
+            collapseWhitespace: false // 删除空格
+          }
       }),
       new HtmlWebpackPlugin({
           template:'./src/index.html',
           filename:'two.html',
-          title:"宁波言成电子技术有限公司2",
+          title:"宁波言成电子技术有限公司",
           hash:true,
-          chunks:['two']
+          chunks:['two'],
+          minify:{
+            removeComments: false, // 删除注释
+            collapseWhitespace: false // 删除空格
+          }
       })
     ],
     devServer: {
@@ -53,6 +71,7 @@ module.exports = (env) => {
       port: process.env.PORT, // Defaults to 8080
       open: true, // Open the page in browser
       overlay: true,
-    }
+    },
+    mode : devMode ? 'development' : 'production'
   }
 };
