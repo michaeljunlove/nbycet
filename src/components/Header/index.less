@@ -1,0 +1,44 @@
+@import "../../css/mixin.less";
+
+.header{
+    width: 100%;
+    margin: 0px auto;
+    position: relative;
+    height: 10rem;
+    margin-bottom: 1rem;
+    z-index: 99;
+    display: flex;
+    background-color: #3656a3;
+    .left{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 20rem;
+        .logo{
+            width: 8rem;
+            height: 8rem;
+            display: inline-block;
+            background: url(http://nbycet.oss-cn-shanghai.aliyuncs.com/logo.jpg) no-repeat;
+            background-size: contain;
+        }
+    }
+    .right{
+        flex:1;
+        margin-left: 5rem;
+        align-items: center;
+        display: flex;
+        ul{
+          display: flex;
+          li{
+              height: 7rem;
+              font-size: 2rem;
+              color: #fff;
+              cursor: pointer;
+              .flex-center()
+          }
+          li+li{
+              margin-left: 5rem;
+          }
+        }
+    }
+}
