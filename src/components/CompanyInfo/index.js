@@ -9,10 +9,16 @@ class Company extends React.PureComponent {
            <div>
             <header>宁波言成电子科技有限公司</header>
             <div className='eng-header'>（Ningbo Yancheng Electronic Technology Co.,Ltd.）</div>
+           
+            <div className='licheng'>
+              <img src="https://nbycet.oss-cn-shanghai.aliyuncs.com/%E5%8F%91%E5%B1%95%E5%8E%86%E7%A8%8B.png" />
+            </div>
+            
             <div className='content'>宁波言成电子科技有限公司成立于2012年，是一家专业生产高精度碳膜电阻、陶瓷电阻和电位器的高科技企业。公司位于宁波市海曙区区石碶镇东杨村新时代工业园。
             我们以 "精益求精、开拓创新、强化质量、持续改进"为的质量方针，建立并实施IATF16949质量管理体系。自成立以来，坚持以客户需求为中心，以多维创新为驱动，不断突破相关产品的技术瓶颈，
             不断响应客户地个性需求，赢得了广大客户的好评和信任。
             </div>
+            
             <div className='content'>Ningbo Yancheng Electronic Technology Co.,Ltd.is founded in 2012，
               in the production of high-precision carbon film resistors, ceramic 
               resistors and potentiometers.Our company is located New ERA Industrial 
@@ -20,6 +26,7 @@ class Company extends React.PureComponent {
               Province, China.We implement IATF16949 quality management system .
               Since Our company inception, adhere to customer demand as the center.
             </div>
+            
             <div className='content'>
             截至2019年，公司汇聚员工30人，其中博士专家1人，硕士专家2人。拥有2条高精度的碳膜电阻印刷线、4条全自动电位器自动生产线、多种自动化检测设备，并自主研发了电阻线性测试仪、耐久性测试仪等，确保了产品生产效率和品质。目前，我们所生产的印刷电阻和电位器，已经广泛应用在大众、马自达、吉利、长城、比亚迪、博世等品牌产品上，建立了长期稳定、持续的合作。2018年，公司销售额已经突破1500万元（人民币）。
             </div>
