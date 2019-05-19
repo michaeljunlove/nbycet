@@ -7,9 +7,9 @@ class SwiperContainer extends React.PureComponent {
     super(props);
     this.state={
         datalist:[
-          {'imageUrl':'http://nbycet.oss-cn-shanghai.aliyuncs.com/s3.jpg','des': '这里放图片对应的描述说明1'},
-          {'imageUrl':'http://nbycet.oss-cn-shanghai.aliyuncs.com/s3.jpg','des': '这里放图片对应的描述说明2'},
-          {'imageUrl':'http://nbycet.oss-cn-shanghai.aliyuncs.com/s3.jpg','des': '这里放图片对应的描述说明3'}
+          {'imageUrl':'http://nbycet.oss-cn-shanghai.aliyuncs.com/s3.jpg','des': '精益求精、开拓创新、强化质量、持续改进'},
+          {'imageUrl':'http://nbycet.oss-cn-shanghai.aliyuncs.com/s3.jpg','des': '精益求精、开拓创新、强化质量、持续改进'},
+          {'imageUrl':'http://nbycet.oss-cn-shanghai.aliyuncs.com/s3.jpg','des': '精益求精、开拓创新、强化质量、持续改进'}
         ]
     }
   }

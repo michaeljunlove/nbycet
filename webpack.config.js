@@ -7,7 +7,7 @@ module.exports = (env) => {
   return {
     entry:{
       index:"./src/index.js",
-      two:"./src/main.js"
+      company:"./src/company.js"
     },
     output: {
       path:path.resolve(__dirname,'docs'),
@@ -37,7 +37,8 @@ module.exports = (env) => {
     },
     plugins: [
       new MiniCssExtractPlugin({
-        filename: "style.css"
+        filename: "[name].css",
+        chunkFilename: "[id].css"
       }),
       new HtmlWebpackPlugin({
           template:'./src/index.html',
@@ -52,10 +53,10 @@ module.exports = (env) => {
       }),
       new HtmlWebpackPlugin({
           template:'./src/index.html',
-          filename:'two.html',
+          filename:'company.html',
           title:"宁波言成电子技术有限公司",
           hash:true,
-          chunks:['two'],
+          chunks:['company'],
           minify:{
             removeComments: false, // 删除注释
             collapseWhitespace: false // 删除空格

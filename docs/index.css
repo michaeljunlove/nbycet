@@ -189,6 +189,10 @@
   font-size: 12px;
 }
 
+a[href='index.html'] {
+  color: #ff6a00;
+}
+
 *,
 *:before,
 *:after {
