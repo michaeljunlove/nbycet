@@ -45,7 +45,7 @@ class News extends React.PureComponent {
 
             <a className='news-detail-href' href='http://resistor.ic-ceca.org.cn/page7?article_id=69' target="_blank">
               <div className='news-item'>
-                <div className='left'><img src='https://nbycet.oss-cn-shanghai.aliyuncs.com/news4.png' /></div>
+                <div className='left'><img src='https://nbycet.oss-cn-shanghai.aliyuncs.com/news4.jpg' /></div>
                 <div className='right'>
                   <div className='news-item-title'>《电阻电位器商情》2019年第二期</div>
                   <div className='news-item-content'>转载于：中国电子元器件行业协会电阻电位器分会 作者：pmo536ee3</div>

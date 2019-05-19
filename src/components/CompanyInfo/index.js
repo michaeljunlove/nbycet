@@ -42,7 +42,7 @@ class Company extends React.PureComponent {
             </div>
             <div className='content'>Our value:Based on the core culture of "doing what you say ".</div>
             
-            <div className='content'>公司的产品:</div>
+            {/* <div className='content'>公司的产品:</div>
 
             <div className='content'>Our company’s products:</div>
             
@@ -75,22 +75,22 @@ class Company extends React.PureComponent {
             </div>
 
             <div className='content'>We need a bottle of Copper paste for research and development.than will be purchased in bulk when passes the test.
-            </div>
+            </div> */}
 
-            <div className='product3'>
+            {/* <div className='product3'>
               <img src='https://nbycet.oss-cn-shanghai.aliyuncs.com/product3.png' />
-            </div>
+            </div> */}
 
-            <div className='content'>营业执照：</div>
+            {/* <div className='content'>营业执照：</div>
             <div className='product4'>
               <img src="https://nbycet.oss-cn-shanghai.aliyuncs.com/%E8%90%A5%E4%B8%9A%E6%89%A7%E7%85%A7.png" />
-            </div>
+            </div> */}
 
 
-            <header>言成电子企业IATF16949证书 （IATF16949 certificate）</header>
+            {/* <header>言成电子企业IATF16949证书 （IATF16949 certificate）</header>
             <div className='product4'>
               <img src="https://nbycet.oss-cn-shanghai.aliyuncs.com/%E8%AF%81%E4%B9%A6.png" />
-            </div>
+            </div> */}
 
 
 
