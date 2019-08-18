@@ -10,7 +10,7 @@ class Header extends React.PureComponent {
             <div className='right'>
               <ul>
                   <li><a href='index.html'>首页</a></li>
-                  <li><a>产品</a></li>
+                  <li><a href="#main">产品</a></li>
                   <li><a>订单服务</a></li>
                   <li><a>解决方案</a></li>
                   <li><a href='company.html'>企业介绍</a></li>

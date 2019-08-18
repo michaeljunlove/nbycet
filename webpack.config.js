@@ -7,7 +7,10 @@ module.exports = (env) => {
   return {
     entry:{
       index:"./src/index.js",
-      company:"./src/company.js"
+      company:"./src/company.js",
+      electricResistance:"./src/electricResistance.js",
+      potentiometer: './src/potentiometer.js',
+      car: './src/car.js'
     },
     output: {
       path:path.resolve(__dirname,'docs'),
@@ -61,6 +64,39 @@ module.exports = (env) => {
             removeComments: false, // 删除注释
             collapseWhitespace: false // 删除空格
           }
+      }),
+      new HtmlWebpackPlugin({
+        template:'./src/index.html',
+        filename:'electricResistance.html',
+        title:"宁波言成电子技术有限公司",
+        hash:true,
+        chunks:['electricResistance'],
+        minify:{
+          removeComments: false, // 删除注释
+          collapseWhitespace: false // 删除空格
+        },
+      }),
+      new HtmlWebpackPlugin({
+        template:'./src/index.html',
+        filename:'potentiometer.html',
+        title:"宁波言成电子技术有限公司",
+        hash:true,
+        chunks:['potentiometer'],
+        minify:{
+          removeComments: false, // 删除注释
+          collapseWhitespace: false // 删除空格
+        },
+      }),
+      new HtmlWebpackPlugin({
+        template:'./src/index.html',
+        filename:'car.html',
+        title:"宁波言成电子技术有限公司",
+        hash:true,
+        chunks:['car'],
+        minify:{
+          removeComments: false, // 删除注释
+          collapseWhitespace: false // 删除空格
+        },
       })
     ],
     devServer: {
