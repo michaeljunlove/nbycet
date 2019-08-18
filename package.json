@@ -38,6 +38,7 @@
     "webpack-dev-server": "^3.1.14"
   },
   "dependencies": {
+    "antd": "^3.22.0",
     "react-swipe": "^6.0.4"
   }
 }

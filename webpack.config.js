@@ -10,7 +10,8 @@ module.exports = (env) => {
       company:"./src/company.js",
       electricResistance:"./src/electricResistance.js",
       potentiometer: './src/potentiometer.js',
-      car: './src/car.js'
+      car: './src/car.js',
+      order: './src/order.js'
     },
     output: {
       path:path.resolve(__dirname,'docs'),
@@ -82,6 +83,17 @@ module.exports = (env) => {
         title:"宁波言成电子技术有限公司",
         hash:true,
         chunks:['potentiometer'],
+        minify:{
+          removeComments: false, // 删除注释
+          collapseWhitespace: false // 删除空格
+        },
+      }),
+      new HtmlWebpackPlugin({
+        template:'./src/index.html',
+        filename:'order.html',
+        title:"宁波言成电子技术有限公司",
+        hash:true,
+        chunks:['order'],
         minify:{
           removeComments: false, // 删除注释
           collapseWhitespace: false // 删除空格
