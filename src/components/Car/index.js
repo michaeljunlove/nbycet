@@ -41,11 +41,6 @@ class Car extends React.PureComponent {
                     <h3 className="mgTop20">汽车行业零部件（汽车空调执行器、节气门角度传感器、汽车音量调节器、雨刮器开关、汽车座椅调节器、汽车天窗开关和后视镜调节开关等）</h3>
                     <h3 className="mgTop20">Auto parts (air conditioner actuator,throttle Angle sensor, volume regulator, wiper switch, seat regulator, sunroof switch and rearview mirror adjustment switch, etc.)</h3>
                 </div>
-                <div className="center">
-                    <img width="50%" src="https://nbycet.oss-cn-shanghai.aliyuncs.com/car.jpg" />
-                    <img width="50%" src="https://nbycet.oss-cn-shanghai.aliyuncs.com/car2.jpg" />
-
-                </div>
 
                 
            </div>

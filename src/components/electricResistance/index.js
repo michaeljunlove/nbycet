@@ -11,7 +11,7 @@ class ElectricResistance extends React.PureComponent {
              <h2 className="mgTop20">言成电子的碳膜电阻片在电动工具行业的应用已有10多年时间了，久经电动工具制造商的考验，以其高性能全面提升电动工具开关的品质。</h2>
              <h2 className="mgTop20">Our carbon film resistor in the power tool industry has been used for more than 10 years,with its high performance to comprehensively improve the quality of power tool switches.</h2>
              <div className="mgTop20" style={{'display':'flex','justifyContent':'center'}}>
-               <img width="80%" src="https://nbycet.oss-cn-shanghai.aliyuncs.com/%E4%B8%9A%E5%8A%A111.jpg" />
+               <img width="50%" src="https://nbycet.oss-cn-shanghai.aliyuncs.com/%E4%B8%9A%E5%8A%A1111.jpg" />
              </div>
 
              <div className="content mgTop20">
